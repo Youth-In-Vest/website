@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youth In-Vest | Empowering Young Leaders</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+      <span class="logo-icon">🛡️</span>
+      <span class="logo-text">Youth <span class="accent">In-Vest</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#join">Join Us</a></li>
+      <li><a href="#apply">Apply</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" onclick="closeMobile()">Home</a></li>
+    <li><a href="#about" onclick="closeMobile()">About</a></li>
+    <li><a href="#join" onclick="closeMobile()">Join Us</a></li>
+    <li><a href="#apply" onclick="closeMobile()">Apply</a></li>
+    <li><a href="#donate" onclick="closeMobile()">Donate</a></li>
+    <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-left fade-in">
+      <p class="hero-eyebrow">DO YOU WANT TO MAKE A DIFFERENCE?</p>
+      <h1 class="hero-heading">
+        Interested In<br/>
+        <span class="accent-orange">Creating</span><br/>
+        <span class="accent-orange">Change?</span>
+      </h1>
+    </div>
+    <div class="hero-right fade-in delay-1">
+      <div class="hero-card">
+        <div class="hero-card-section">
+          <h3>PARENTS &amp; TEACHERS:</h3>
+          <p>Are you passionate about supporting your students and children in staying financially informed? Join our community to stay informed, share feedback on our workshops, and help us deliver the best experience for you!</p>
+          <a href="#join" class="btn btn-outline">Join Our Community</a>
+          <a href="#donate" class="btn btn-outline mt-sm">Interested in Donating?</a>
+        </div>
+        <div class="hero-card-divider"></div>
+        <div class="hero-card-section">
+          <h3>TEENAGERS:</h3>
+          <p>All high schoolers… ready to make a difference? Join us to gain valuable experience, boost your college applications, and help empower young people with financial knowledge that can change their lives.</p>
+          <a href="#apply" class="btn btn-primary">Apply</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="location-badge">
+    <i class="fas fa-map-marker-alt"></i>
+    Based in <strong>Cupertino, CA</strong> &amp; <strong>Houston, TX</strong>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about">
+  <div class="section-header reveal">
+    <h2 class="section-title">Who Are We?</h2>
+    <div class="title-bar"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-card reveal delay-1">
+      <div class="about-card-icon">🎯</div>
+      <h3>Mission</h3>
+      <p>At Youth In-Vest, our mission is to empower young people with the financial knowledge, leadership skills, and confidence they need to take charge of their futures. We believe that when youth are given the right tools and opportunities, they can invest not only in themselves but also in their communities and the world around them.</p>
+    </div>
+    <div class="about-card reveal delay-2">
+      <div class="about-card-icon">🔭</div>
+      <h3>Vision</h3>
+      <p>We envision a generation of youth who are financially literate, socially conscious, and ready to lead with purpose. Our goal is to create a space where young people feel prepared to make smart decisions, turn their ideas into action, and use their skills to create lasting impact.</p>
+    </div>
+    <div class="about-card reveal delay-3">
+      <div class="about-card-icon">⚡</div>
+      <h3>Method</h3>
+      <p>We bring learning to life through interactive workshops, mentorship programs, and hands-on projects that go beyond the classroom. By combining practical experiences with guidance from peers and professionals, Youth In-Vest ensures that young people don't just learn about financial literacy and leadership — they practice it, apply it, and grow with it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JOIN US SECTION ===== -->
+<section id="join" class="join">
+  <div class="section-header reveal">
+    <h2 class="section-title">Join Us</h2>
+    <div class="title-bar"></div>
+  </div>
+  <div class="join-inner">
+    <div class="join-mailing reveal delay-1">
+      <div class="join-mailing-content">
+        <h3>Join Our Mailing List</h3>
+        <p>Don't miss out! Join our mailing list to receive the latest news, program updates, event details, and opportunities from Youth In-Vest.</p>
+        <div class="mailing-form">
+          <input type="email" id="mailingEmail" placeholder="Enter your email here*" />
+          <button class="btn btn-primary" onclick="subscribeMailingList()">Subscribe</button>
+        </div>
+        <p id="mailingMsg" class="form-success" style="display:none;">✅ You're on the list! Welcome to the community.</p>
+      </div>
+    </div>
+    <div class="join-community reveal delay-2">
+      <div class="community-card">
+        <h3>Why Join Our Community?</h3>
+        <p>At Youth In-Vest, joining our community means more than attending events — it's about growing together. Students gain real world financial and leadership skills, while parents can trust that their children are building confidence, independence, and a strong foundation for the future.</p>
+        <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn btn-accent">Join Us →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPLY SECTION ===== -->
+<section id="apply" class="apply-section">
+  <div class="section-header reveal">
+    <h2 class="section-title">Apply To Be On Our Team</h2>
+    <div class="title-bar"></div>
+  </div>
+  <div class="apply-hero reveal delay-1">
+    <div class="apply-hero-content">
+      <h3>Apply For Our National Team <span class="accent-orange">Now</span></h3>
+      <p>Applications are open! Choose your team and start your journey.</p>
+      <a href="https://forms.gle/YOUR_APPLICATION_FORM" target="_blank" class="btn btn-primary btn-lg">Apply Now</a>
+    </div>
+  </div>
+  <div class="apply-intro reveal delay-2">
+    <p>Thank you for your interest in joining the Youth In-Vest Team! As a team member, it's important that you are able to manage your time effectively and meet all project deadlines. If you're applying for a lead role, you should be ready to dedicate extra time to guide your team and ensure projects run smoothly.</p>
+    <p>We have several teams where you can contribute:</p>
+  </div>
+  <div class="teams-grid">
+    <div class="team-card reveal">
+      <div class="team-icon">📢</div>
+      <h4>Marketing Team</h4>
+      <p>Promote our programs, events, and mission through creative campaigns and manage our social media platforms.</p>
+    </div>
+    <div class="team-card reveal delay-1">
+      <div class="team-icon">📋</div>
+      <h4>Program Management Team</h4>
+      <p>Help organize workshops, events, and initiatives to ensure everything runs efficiently.</p>
+    </div>
+    <div class="team-card reveal delay-2">
+      <div class="team-icon">💰</div>
+      <h4>Finance Team</h4>
+      <p>Support budgeting, financial planning, and tracking for our programs.</p>
+    </div>
+    <div class="team-card reveal delay-3">
+      <div class="team-icon">✍️</div>
+      <h4>Research &amp; Writing Team</h4>
+      <p>Create content and slides for workshops, newsletters, and other educational materials.</p>
+    </div>
+    <div class="team-card reveal delay-4">
+      <div class="team-icon">💻</div>
+      <h4>Tech Team</h4>
+      <p>Assist with our online simulation, manage our website, and support other technical needs.</p>
+    </div>
+  </div>
+
+  <!-- Application Form -->
+  <div class="app-form-wrapper reveal delay-1">
+    <h3>Quick Application</h3>
+    <p class="subtext">Fill this out or click "Apply Now" above to use the Google Form.</p>
+    <div class="app-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" id="appName" placeholder="Your full name"/>
+        </div>
+        <div class="form-group">
+          <label>Grade *</label>
+          <select id="appGrade">
+            <option value="">Select grade</option>
+            <option>8th</option><option>9th</option><option>10th</option><option>11th</option><option>12th</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>State (US) *</label>
+          <input type="text" id="appState" placeholder="e.g. California"/>
+        </div>
+        <div class="form-group">
+          <label>High School *</label>
+          <input type="text" id="appSchool" placeholder="Your high school name"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Role Interest *</label>
+          <select id="appRole">
+            <option value="">Select role</option>
+            <option>Member</option>
+            <option>VP</option>
+            <option>Director</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" id="appEmail" placeholder="your@email.com"/>
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label>Which teams are you interested in? *</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="Marketing Team"/> Marketing Team</label>
+          <label><input type="checkbox" value="Program Management Team"/> Program Management Team</label>
+          <label><input type="checkbox" value="Finance Team"/> Finance Team</label>
+          <label><input type="checkbox" value="Research & Writing Team"/> Research &amp; Writing Team</label>
+          <label><input type="checkbox" value="Tech Team"/> Tech Team</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-full" onclick="submitApplication()">Submit Application</button>
+      <p id="appMsg" class="form-success" style="display:none;">✅ Thank you! We'll be in touch soon.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DONATE SECTION ===== -->
+<section id="donate" class="donate-section">
+  <div class="section-header reveal">
+    <h2 class="section-title">Donate</h2>
+    <div class="title-bar"></div>
+  </div>
+  <div class="donate-inner">
+    <div class="donate-info reveal delay-1">
+      <h3>Support Our Mission</h3>
+      <p>Your donation helps us run workshops, create resources, and reach more young people with financial education. Every dollar makes a difference in a student's future.</p>
+      <div class="donate-amounts">
+        <button class="amount-btn" onclick="setAmount(10)">$10</button>
+        <button class="amount-btn" onclick="setAmount(25)">$25</button>
+        <button class="amount-btn active" onclick="setAmount(50)">$50</button>
+        <button class="amount-btn" onclick="setAmount(100)">$100</button>
+      </div>
+    </div>
+    <div class="donate-form-card reveal delay-2">
+      <div class="donate-form-header">
+        <span class="donate-logo">🛡️</span>
+        <h3>Donate To<br/><strong>Youth In-Vest</strong></h3>
+      </div>
+      <div class="donate-tabs">
+        <button class="tab-btn active" onclick="setTab('one-time',this)">One-time</button>
+        <button class="tab-btn" onclick="setTab('monthly',this)">Monthly</button>
+      </div>
+      <div class="donate-form">
+        <div class="form-group">
+          <label>Your name</label>
+          <input type="text" id="donorName" placeholder="John Smith"/>
+        </div>
+        <div class="form-group">
+          <label>Your email <span class="small-text">We'll send a receipt for your records.</span></label>
+          <input type="email" id="donorEmail" placeholder="jsmith@gmail.com"/>
+        </div>
+        <div class="form-group">
+          <label>Message <span class="small-text">Optionally include a note.</span></label>
+          <textarea id="donorMessage" placeholder="Keep up the good work!"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Donation amount</label>
+          <div class="amount-input">
+            <span>$</span>
+            <input type="number" id="donorAmount" value="50" min="1"/>
+          </div>
+        </div>
+        <div class="donate-checks">
+          <label><input type="checkbox"/> I'm receiving goods for this donation.</label>
+          <label><input type="checkbox"/> Add $0.00 to cover all fees</label>
+          <label><input type="checkbox"/> Don't display my name publicly.</label>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="processDonation()">Continue →</button>
+        <p id="donateMsg" class="form-success" style="display:none;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="contact-section">
+  <div class="section-header reveal">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="title-bar"></div>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-info reveal delay-1">
+      <h3>Get In Touch</h3>
+      <p>Have a question, idea, or just want to say hello? Send us a message and we'll get back to you as soon as possible.</p>
+      <div class="contact-socials">
+        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:youthinvest@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="contact-location">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Cupertino, CA &amp; Houston, TX</span>
+      </div>
+    </div>
+    <div class="contact-form-card reveal delay-2">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="cfFirst" placeholder="First"/>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="cfLast" placeholder="Last"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" id="cfEmail" placeholder="your@email.com"/>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="cfMessage" placeholder="Your message here..." rows="4"></textarea>
+      </div>
+      <button class="btn btn-primary btn-full" onclick="sendContact()">Send Message</button>
+      <p id="contactMsg" class="form-success" style="display:none;">✅ Message sent! We'll get back to you soon.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon">🛡️</span>
+      <span class="logo-text">Youth <span class="accent">In-Vest</span></span>
+    </div>
+    <p class="footer-tagline">Empowering young people with financial knowledge &amp; leadership.</p>
+    <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Cupertino, CA &amp; Houston, TX</p>
+    <div class="footer-socials">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:youthinvest@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-copy">© 2025 Youth In-Vest. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
